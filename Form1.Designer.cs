@@ -1,6 +1,6 @@
 ﻿namespace pryMolina
 {
-    partial class Form1
+    partial class frmPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -50,15 +50,16 @@
             btnJuego.Text = "Juego";
             btnJuego.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(btnJuego);
             Controls.Add(btnFirma);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "frmPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Principal";
             ResumeLayout(false);
         }
 
