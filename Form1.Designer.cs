@@ -51,6 +51,7 @@
             btnJuego.Size = new Size(292, 170);
             btnJuego.TabIndex = 1;
             btnJuego.UseVisualStyleBackColor = true;
+            btnJuego.Click += btnJuego_Click;
             // 
             // frmPrincipal
             // 
