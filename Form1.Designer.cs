@@ -28,33 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             btnFirma = new Button();
             btnJuego = new Button();
             SuspendLayout();
             // 
             // btnFirma
             // 
-            btnFirma.Location = new Point(114, 132);
+            btnFirma.BackgroundImage = (Image)resources.GetObject("btnFirma.BackgroundImage");
+            btnFirma.Location = new Point(12, 41);
             btnFirma.Name = "btnFirma";
-            btnFirma.Size = new Size(184, 122);
+            btnFirma.Size = new Size(292, 170);
             btnFirma.TabIndex = 0;
             btnFirma.Text = "Firma";
             btnFirma.UseVisualStyleBackColor = true;
             // 
             // btnJuego
             // 
-            btnJuego.Location = new Point(345, 132);
+            btnJuego.BackgroundImage = (Image)resources.GetObject("btnJuego.BackgroundImage");
+            btnJuego.Location = new Point(321, 41);
             btnJuego.Name = "btnJuego";
-            btnJuego.Size = new Size(184, 122);
+            btnJuego.Size = new Size(292, 170);
             btnJuego.TabIndex = 1;
-            btnJuego.Text = "Juego";
             btnJuego.UseVisualStyleBackColor = true;
             // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.ActiveCaptionText;
+            ClientSize = new Size(621, 244);
             Controls.Add(btnJuego);
             Controls.Add(btnFirma);
             Name = "frmPrincipal";
