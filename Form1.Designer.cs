@@ -42,6 +42,7 @@
             btnFirma.TabIndex = 0;
             btnFirma.Text = "Firma";
             btnFirma.UseVisualStyleBackColor = true;
+            btnFirma.Click += btnFirma_Click;
             // 
             // btnJuego
             // 

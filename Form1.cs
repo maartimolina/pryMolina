@@ -6,5 +6,11 @@ namespace pryMolina
         {
             InitializeComponent();
         }
+
+        private void btnFirma_Click(object sender, EventArgs e)
+        {
+            Form Firma= new frmFirma();
+            Firma.Show();
+        }
     }
 }
