@@ -30,6 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             timer1 = new System.Windows.Forms.Timer(components);
+            progressBar = new ProgressBar();
             SuspendLayout();
             // 
             // timer1
@@ -37,22 +38,37 @@
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
+            // progressBar
+            // 
+            progressBar.Location = new Point(767, 34);
+            progressBar.Maximum = 50;
+            progressBar.Name = "progressBar";
+            progressBar.Size = new Size(163, 29);
+            progressBar.Style = ProgressBarStyle.Continuous;
+            progressBar.TabIndex = 0;
+            progressBar.Value = 50;
+            progressBar.Visible = false;
+            // 
             // frmJuego
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1038, 774);
+            Controls.Add(progressBar);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmJuego";
             StartPosition = FormStartPosition.CenterScreen;
+            TopMost = true;
             Load += frmJuego_Load;
             KeyDown += frmJuego_KeyDown;
+            KeyPress += frmJuego_KeyPress;
             ResumeLayout(false);
         }
 
         #endregion
 
         private System.Windows.Forms.Timer timer1;
+        private ProgressBar progressBar;
     }
 }
