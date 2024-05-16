@@ -18,15 +18,17 @@ namespace pryMolina
 
         clsNave objNaveJugador;
         List<PictureBox> balas = new List<PictureBox>();
-
+        public string NombreJugador { get; set; }
         public int puntaje { get; set; } = 0;
 
-        public frmJuego()
+        public frmJuego(string nombre)
         {
             InitializeComponent();
             objNaveJugador = new clsNave();
             objNaveJugador.EnemigoEliminado += ObjNaveJugador_EnemigoEliminado;
             progressBar.Value = 0;
+            NombreJugador = nombre;
+            lblNombreJugador.Text = nombre;
         }
         private void ObjNaveJugador_EnemigoEliminado(object sender, EventArgs e)
         {

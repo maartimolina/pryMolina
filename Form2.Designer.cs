@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             timer1 = new System.Windows.Forms.Timer(components);
             progressBar = new ProgressBar();
+            lblNombreJugador = new Label();
             SuspendLayout();
             // 
             // timer1
@@ -47,7 +48,16 @@
             progressBar.Style = ProgressBarStyle.Continuous;
             progressBar.TabIndex = 0;
             progressBar.Value = 50;
-            progressBar.Visible = false;
+            // 
+            // lblNombreJugador
+            // 
+            lblNombreJugador.AutoSize = true;
+            lblNombreJugador.Font = new Font("Bodoni MT", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNombreJugador.ForeColor = SystemColors.ButtonHighlight;
+            lblNombreJugador.Location = new Point(827, 75);
+            lblNombreJugador.Name = "lblNombreJugador";
+            lblNombreJugador.Size = new Size(0, 27);
+            lblNombreJugador.TabIndex = 1;
             // 
             // frmJuego
             // 
@@ -55,6 +65,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1038, 774);
+            Controls.Add(lblNombreJugador);
             Controls.Add(progressBar);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmJuego";
@@ -64,11 +75,13 @@
             KeyDown += frmJuego_KeyDown;
             KeyPress += frmJuego_KeyPress;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private System.Windows.Forms.Timer timer1;
         private ProgressBar progressBar;
+        private Label lblNombreJugador;
     }
 }

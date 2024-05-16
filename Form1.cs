@@ -9,7 +9,7 @@ namespace pryMolina
 
         private void btnJuego_Click(object sender, EventArgs e)
         {
-            Form Juego = new frmJuego();
+            Form Juego = new frmInicio();
             Juego.Show();
         }
     }
